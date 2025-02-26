@@ -15,7 +15,6 @@ public:
     virtual void initialize_display() = 0;
     void simulate(float frame_rate = 1.0);
     void update();
-    // void set_sample_display();
     bool pixel_is_valid(int x, int y);
     void print_display();
     int height_get();

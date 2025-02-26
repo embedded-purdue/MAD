@@ -49,14 +49,6 @@ void Display::update() {
     display = next_display; 
 };
 
-// void Display::set_sample_display() {
-//     for (int y = 0; y < height; ++y) {
-//         for (int x = 0; x < width; ++x) {
-//             display[y][x] = (x + y) % 2;
-//         }
-//     }
-// }
-
 bool Display::pixel_is_valid(int x, int y) {
     return x >= 0 && x < width && y >= 0 && y < height;
 }
