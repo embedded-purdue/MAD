@@ -4,7 +4,7 @@ SRC_FILES = $(filter-out $(wildcard mad.cpp),$(wildcard *.cpp))
 SFML = -I/opt/homebrew/include -L/opt/homebrew/lib -lsfml-graphics -lsfml-window -lsfml-system
 APP = mad
 
-money:
+mad:
 	$(CC) $(C_FLAGS) $(SRC_FILES) -o $(APP) mad.cpp $(SFML)
 
 valgrind:
